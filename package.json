@@ -1,0 +1,13 @@
+{
+  "name": "test",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "fs-extra": "^4.0.2",
+    "html-pdf": "^2.2.0",
+    "nodemailer": "^4.1.2",
+    "nodemailer-smtp-transport": "^2.7.4",
+    "sanitize-filename": "^1.6.1"
+  }
+}
