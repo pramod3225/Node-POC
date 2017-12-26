@@ -8,6 +8,21 @@ const mockHtml = require('./mock-html.js')
 const cheerio = require('cheerio')
 const $ = cheerio.load(mockHtml.getHTML());
 
+$.fn.getCellByColSpanIndex = function(index) {
+    var retCell         = null,
+        nonColSpanIndex = 0;
+    $(this).each(function(i,item){        
+        var colspan = $(this).attr('colspan');
+        colspan = colspan ? parseInt(colspan) : 1;
+        nonColSpanIndex += colspan;
+        if(nonColSpanIndex >= index+1) {
+            retCell = item;
+            return false;
+        }
+    });
+    return $(retCell);
+};
+
 $.fn.getHeaderArr = function(){
     var cellIndex = -1;
     var siblingCells = this.closest('tr').find('td');
@@ -17,29 +32,45 @@ $.fn.getHeaderArr = function(){
         cellIndex = cellIndex + tarColspan;
         if ($cell.is(this)) break;        
     }
+    if (cellIndex < 3) return false;
     var tableRows = this.closest('table').find('tr');
-    var tableHeaderArrays = [];
-    for (var i = 0; i < tableRows.length; i++) {
-        var hCellIndex = -1, hCellPrevIndex=-1;
-        if($('td',tableRows[i]).first().text().trim()) break;
-        var $row = $(tableRows[i]);   
-        if($row.text().trim()=="") continue;    
-
+    var tableHeaderArray = [];
+    
+    for (var i = 0; i < tableRows.length; i++) {  
+        var $row = $(tableRows[i]);            
+        if($('td',$row).first().text().trim()) break;           
+        if($row.text().trim()=="") continue;
         var cells = $row.find('td');
+        var hCellIndex = -1, hCellPrevIndex=-1, tableHeader = [];  
         for (var j = 0; j < cells.length; j++) {
             var $cell = $(cells[j]);
             var colspan = $cell.attr('colspan')? parseInt($cell.attr('colspan')):1;
             hCellPrevIndex = hCellIndex;
             hCellIndex = hCellIndex + colspan;
-            if ($cell.text().trim() && hCellPrevIndex < cellIndex && cellIndex <= hCellIndex+tarColspan-1){
-                tableHeaderArrays.push($cell.text().trim()); 
-                console.log(`${$cell.text().trim()} - (${hCellIndex} , ${hCellPrevIndex})`);              
-                
-            }            
+            if ($cell.text().trim() && hCellPrevIndex < cellIndex && cellIndex <= hCellIndex + tarColspan - 1){                
+                tableHeader.push({cellText:$cell.text().trim(),pi:hCellPrevIndex,ci:hCellIndex});
+                tableHeaderArray.push({cellText:$cell.text().trim(),pi:hCellPrevIndex,ci:hCellIndex});
+            }          
         }
+        
     }
-    return tableHeaderArrays;
+    var finalObj = {};
+    for (let l = 0; l < tableHeaderArray.length; l++) {                
+        const cell = tableHeaderArray[l];
+        tableHeader.forEach(el => {
+            if((cell.pi < el.pi && cell.ci >= el.ci) ||(cell.pi == el.pi && cell.ci == el.ci)){
+                if(finalObj[el.ci]){                    
+                    finalObj[el.ci].push(cell.cellText)
+                }else{
+                    finalObj[el.ci] = [cell.cellText]
+                }
+            }
+        });
+        
+    } 
+    return finalObj;
 }
+
 $.fn.getNonColSpanIndex = function() {
     if(! $(this).is('td') && ! $(this).is('th'))
         return -1;
@@ -59,20 +90,6 @@ $.fn.getNonColSpanIndex = function() {
     );
 
     return nonColSpanIndex;
-};
-$.fn.getCellByColSpanIndex = function(index) {
-    var retCell         = null,
-        nonColSpanIndex = 0;
-    $(this).each(function(i,item){        
-        var colspan = $(this).attr('colspan');
-        colspan = colspan ? parseInt(colspan) : 1;
-        nonColSpanIndex += colspan;
-        if(nonColSpanIndex >= index+1) {
-            retCell = item;
-            return false;
-        }
-    });
-    return $(retCell);
 };
 
 var getPossibleContextNames = function (startDate, endDate) {
@@ -193,4 +210,3 @@ console.log($('td#testCell1').getHeaderArr());
 // var secPeriodRegx =  /((One|Three|Six|Nine|twelve|1|3|6|9|12)\sMonths\sended\s?)/gi
 // var match = secDateRegx.exec(str);
 // console.log(match);
-
