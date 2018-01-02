@@ -11,6 +11,7 @@ const $ = cheerio.load(mockHtml.getHTML());
 $.fn.getCellByColSpanIndex = function(index) {
     var retCell         = null,
         nonColSpanIndex = 0;
+    index               = parseInt(index);
     $(this).each(function(i,item){        
         var colspan = $(this).attr('colspan');
         colspan = colspan ? parseInt(colspan) : 1;
@@ -23,9 +24,23 @@ $.fn.getCellByColSpanIndex = function(index) {
     return $(retCell);
 };
 
-$.fn.getHeaderArr = function(){
-    var cellIndex = -1;
-    var siblingCells = this.closest('tr').find('td');
+$.fn.getColumnCells = function(index,factCellStarted) {
+    var cells           = [],
+        factCellStarted = factCellStarted || false;
+    $(this).find('tr').each(function(i,item){
+        if(!factCellStarted && $(item).find('td').first().text().trim()) factCellStarted = true;
+        var cell = $(item).find('td').getCellByColSpanIndex(index);
+        if(factCellStarted && cell.text().trim()){
+            cells.push({cellText:cell.text().replace(/\(|\)|\$/ig,'').trim(),cell:cell});
+        }
+    });
+    return cells;
+}
+
+$.fn.getContextTexts = function(){
+    var cellIndex = -1, thisRow = this.closest('tr');
+    var siblingCells = thisRow.find('td');
+    if ($(siblingCells[0]).text().trim()) return false;
     for (var i = 0; i < siblingCells.length; i++) {
         var $cell = $(siblingCells[i]);       
         var tarColspan = $cell.attr('colspan')? parseInt($cell.attr('colspan')):1;       
@@ -34,6 +49,7 @@ $.fn.getHeaderArr = function(){
     }
     if (cellIndex < 3) return false;
     var tableRows = this.closest('table').find('tr');
+
     var tableHeaderArray = [];
     
     for (var i = 0; i < tableRows.length; i++) {  
@@ -60,9 +76,9 @@ $.fn.getHeaderArr = function(){
         tableHeader.forEach(el => {
             if((cell.pi < el.pi && cell.ci >= el.ci) ||(cell.pi == el.pi && cell.ci == el.ci)){
                 if(finalObj[el.ci]){                    
-                    finalObj[el.ci].push(cell.cellText)
+                    finalObj[el.ci]= finalObj[el.ci] +" "+ cell.cellText;
                 }else{
-                    finalObj[el.ci] = [cell.cellText]
+                    finalObj[el.ci] = cell.cellText;
                 }
             }
         });
@@ -202,11 +218,16 @@ var text2num = function (s) {
 }
 
 
-console.log($('td#testCell1').getHeaderArr());
-//console.log($('td#2').getHeaderArr());
+//console.log($('td#6-7').getHeaderArr());
+console.log($('table').getColumnCells("3",true));
 
 // var str  = " June 30, 2017";
 // var secDateRegx = /((One|Three|Six|Nine|twelve|1|3|6|9|12)\sMonths\sended\s?)?(january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\.?\s?(3[01]|[12]\d|[1-9])\,?\s?(20[1-9][1-9])?/gi;
 // var secPeriodRegx =  /((One|Three|Six|Nine|twelve|1|3|6|9|12)\sMonths\sended\s?)/gi
 // var match = secDateRegx.exec(str);
 // console.log(match);
+
+
+array.forEach(element => {
+    
+});
