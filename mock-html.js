@@ -1,4 +1,4 @@
-var htmlData = `<div style="width:100%;">
+var htmlData1 = `<div style="width:100%;">
 <table cellpadding="0" cellspacing="0" style="border-collapse:collapse;width: 100.00%;margin-left:0pt;">
 <tbody>
 <tr>
@@ -40,7 +40,7 @@ var htmlData = `<div style="width:100%;">
 		<p style="margin:0pt;color:#000000;font-family:Times New Roman,Times,serif;font-size: 8pt;">
 			<font style="display:inline;font-size:8pt;">&nbsp;</font></p>
 	</td>
-	<td colspan="5" valign="bottom" style="width:32.78%;border-top:1pt none #D9D9D9 ;border-left:1pt none #D9D9D9 ;border-bottom:1pt none #D9D9D9 ;border-right:1pt none #D9D9D9 ;background-color: #auto;padding:0pt;">
+	<td id="2-3" colspan="5" valign="bottom" style="width:32.78%;border-top:1pt none #D9D9D9 ;border-left:1pt none #D9D9D9 ;border-bottom:1pt none #D9D9D9 ;border-right:1pt none #D9D9D9 ;background-color: #auto;padding:0pt;">
 		<p style="margin:0pt;text-align:center;color:#000000;font-family:Times New Roman,Times,serif;font-size: 8pt;">
 			<font style="display:inline;font-weight:bold;color:#000000;font-size:8pt;">Three Months Ended </font></p>
 	</td>
@@ -62,7 +62,7 @@ var htmlData = `<div style="width:100%;">
 <tr>
 	<td valign="bottom" style="width:65.18%;border-top:1pt none #D9D9D9 ;border-left:1pt none #D9D9D9 ;border-bottom:1pt solid #000000 ;border-right:1pt none #D9D9D9 ;background-color: #auto;padding:0pt;">
 		<p style="margin:0pt;color:#000000;font-family:Times New Roman,Times,serif;font-size: 8pt;">
-			<font style="display:inline;font-weight:bold;color:#000000;font-size:8pt;"></font></p>
+			<font style="display:inline;font-weight:bold;color:#000000;font-size:8pt;">(in thousands, except per share data)</font></p>
 	</td>
 	<td valign="bottom" style="width:02.02%;border-top:1pt none #D9D9D9 ;border-left:1pt none #D9D9D9 ;border-bottom:1pt none #D9D9D9 ;border-right:1pt none #D9D9D9 ;background-color: #auto;padding:0pt;">
 		<p style="margin:0pt;color:#000000;font-family:Times New Roman,Times,serif;font-size: 8pt;">
@@ -84,7 +84,7 @@ var htmlData = `<div style="width:100%;">
 		<p style="margin:0pt;color:#000000;font-family:Times New Roman,Times,serif;font-size: 8pt;">
 			<font style="display:inline;font-size:8pt;">&nbsp;</font></p>
 	</td>
-	<td valign="bottom" style="width:13.60%;border-top:1pt none #D9D9D9 ;border-left:1pt none #D9D9D9 ;border-bottom:1pt solid #000000 ;border-right:1pt none #D9D9D9 ;background-color: #auto;padding:0pt;">
+	<td id="2016" valign="bottom" style="width:13.60%;border-top:1pt none #D9D9D9 ;border-left:1pt none #D9D9D9 ;border-bottom:1pt solid #000000 ;border-right:1pt none #D9D9D9 ;background-color: #auto;padding:0pt;">
 		<p style="margin:0pt;text-align:center;font-family:Times New Roman,Times,serif;font-size: 8pt;">
 			<font style="display:inline;font-weight:bold;color:#000000;font-size:8pt;">2016</font></p>
 	</td>
@@ -1109,4072 +1109,515 @@ var htmlData = `<div style="width:100%;">
 			<font style="display:inline;color:#000000;"> (0.57)</font></p>
 	</td>
 </tr>
-</tbody></table></div>
+</tbody></table>
+
+</div>`
+var htmlData = `<table id="balanceat" cellspacing="0" cellpadding="0" width="100%" border="0" style="BORDER-COLLAPSE:COLLAPSE; font-family:Times New Roman; font-size:10pt" align="center">
+<tbody><tr>
+<td width="61%"></td>
+<td valign="bottom" width="8%"></td>
+<td></td>
+<td></td>
+<td></td>
+<td valign="bottom" width="8%"></td>
+<td></td>
+<td></td>
+<td></td>
+<td valign="bottom" width="8%"></td>
+<td></td>
+<td></td>
+<td></td></tr>
+<tr style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000"><i>In thousands</i></td>
+<td valign="bottom" style=" BORDER-BOTTOM:2.00pt solid #000000">&nbsp;&nbsp;</td>
+<td valign="bottom" colspan="2" align="right" style="BORDER-BOTTOM:2.00pt solid #000000">Foreign&nbsp;Currency<br>Translation</td>
+<td valign="bottom" style=" BORDER-BOTTOM:2.00pt solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:2.00pt solid #000000">&nbsp;</td>
+<td valign="bottom" colspan="2" align="right" style="BORDER-BOTTOM:2.00pt solid #000000">Cash&nbsp;Flow<br>Hedges</td>
+<td valign="bottom" style=" BORDER-BOTTOM:2.00pt solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:2.00pt solid #000000">&nbsp;</td>
+<td valign="bottom" colspan="2" align="right" style="BORDER-BOTTOM:2.00pt solid #000000">Accumulated&nbsp;Other<br>Comprehensive<br>Income (Loss)</td>
+<td valign="bottom" style=" BORDER-BOTTOM:2.00pt solid #000000">&nbsp;</td></tr>
+
+
+<tr bgcolor="#cceeff" style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td id="chh1" valign="top" style="BORDER-BOTTOM:1px solid #000000"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:1.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Balance at January&nbsp;29, 2017</p></td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">$</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(9,957</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">$</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">54</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">$</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(9,903</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td></tr>
+<tr style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:3.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Foreign currency translation adjustments</p></td>
+<td valign="bottom">&nbsp;&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">(1,566</td>
+<td nowrap="" valign="bottom">)&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td nowrap="" valign="bottom" align="right">—&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">(1,566</td>
+<td nowrap="" valign="bottom">)&nbsp;</td></tr>
+<tr bgcolor="#cceeff" style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top" nowrap=""> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:3.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Change in fair value of derivative financial instruments</p></td>
+<td valign="bottom">&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td nowrap="" valign="bottom" align="right">—&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">655</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">655</td>
+<td nowrap="" valign="bottom">&nbsp;</td></tr>
+<tr style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top" style="BORDER-BOTTOM:1px solid #000000"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:3.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Reclassification adjustment for realized (gain) loss on
+derivative&nbsp;financial instruments <i><sup style="font-size:85%; vertical-align:top">1</sup></i></p></td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">—&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(16</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(16</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td></tr>
+<tr bgcolor="#cceeff" style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top" style="BORDER-BOTTOM:1px solid #000000"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:5.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Other comprehensive income (loss)</p></td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(1,566</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">639</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(927</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td></tr>
+<tr style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top" style="BORDER-BOTTOM:1px solid #000000"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:1.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Balance at April&nbsp;30, 2017</p></td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(11,523</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">693</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(10,830</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td></tr>
+<tr bgcolor="#cceeff" style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:3.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Foreign currency translation adjustments</p></td>
+<td valign="bottom">&nbsp;&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">3,390</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td nowrap="" valign="bottom" align="right">—&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">3,390</td>
+<td nowrap="" valign="bottom">&nbsp;</td></tr>
+<tr style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:3.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Change in fair value of derivative financial instruments</p></td>
+<td valign="bottom">&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td nowrap="" valign="bottom" align="right">—&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">(1,166</td>
+<td nowrap="" valign="bottom">)&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">(1,166</td>
+<td nowrap="" valign="bottom">)&nbsp;</td></tr>
+<tr bgcolor="#cceeff" style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top" style="BORDER-BOTTOM:1px solid #000000"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:3.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Reclassification adjustment for realized (gain) loss on
+derivative&nbsp;financial instruments <i><sup style="font-size:85%; vertical-align:top">1</sup></i></p></td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">—&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">7</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">7</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td></tr>
+<tr style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top" style="BORDER-BOTTOM:1px solid #000000"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:5.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Other comprehensive income (loss)</p></td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">3,390</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(1,159</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">2,231</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td></tr>
+<tr bgcolor="#cceeff" style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top" style="BORDER-BOTTOM:1px solid #000000"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:1.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Balance at July&nbsp;30, 2017</p></td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(8,133</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(466</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(8,599</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td></tr>
+<tr style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:3.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Foreign currency translation adjustments</p></td>
+<td valign="bottom">&nbsp;&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">40</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td nowrap="" valign="bottom" align="right">—&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">40</td>
+<td nowrap="" valign="bottom">&nbsp;</td></tr>
+<tr bgcolor="#cceeff" style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:3.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Change in fair value of derivative financial instruments</p></td>
+<td valign="bottom">&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td nowrap="" valign="bottom" align="right">—&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">373</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">373</td>
+<td nowrap="" valign="bottom">&nbsp;</td></tr>
+<tr style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top" style="BORDER-BOTTOM:1px solid #000000"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:3.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Reclassification adjustment for realized (gain) loss on
+derivative&nbsp;financial instruments<i><sup style="font-size:85%; vertical-align:top"> 1</sup></i></p></td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">—&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(128</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(128</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td></tr>
+<tr bgcolor="#cceeff" style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top" style="BORDER-BOTTOM:1px solid #000000"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:5.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Other comprehensive income (loss)</p></td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">40</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">245</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">285</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td></tr>
+<tr style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top" style="BORDER-BOTTOM:2.00pt solid #000000"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:1.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Balance at October&nbsp;29, 2017</p></td>
+<td valign="bottom" style=" BORDER-BOTTOM:2.00pt solid #000000">&nbsp;&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000">$</td>
+<td valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000" align="right">(8,093</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000">)&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:2.00pt solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000">$</td>
+<td valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000" align="right">(221</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000">)&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:2.00pt solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000">$</td>
+<td valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000" align="right">(8,314</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000">)&nbsp;</td></tr>
+<tr style="font-size:1pt">
+<td height="8"></td>
+<td height="8" colspan="4"></td>
+<td height="8" colspan="4"></td>
+<td height="8" colspan="4"></td></tr>
+<tr style="font-size:1px; font-family:Times New Roman; font-size:10pt">
+<td valign="top" style="BORDER-BOTTOM:2.00pt solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:2.00pt solid #000000">&nbsp;&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:2.00pt solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:2.00pt solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000">&nbsp;</td></tr>
+<tr style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top" style="BORDER-BOTTOM:1px solid #000000"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:1.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Balance at January&nbsp;31, 2016</p></td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">$</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(11,480</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">$</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">864</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">$</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(10,616</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td></tr>
+<tr bgcolor="#cceeff" style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:3.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Foreign currency translation adjustments</p></td>
+<td valign="bottom">&nbsp;&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">5,208</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td nowrap="" valign="bottom" align="right">—&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">5,208</td>
+<td nowrap="" valign="bottom">&nbsp;</td></tr>
+<tr style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:3.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Change in fair value of derivative financial instruments</p></td>
+<td valign="bottom">&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td nowrap="" valign="bottom" align="right">—&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">(2,165</td>
+<td nowrap="" valign="bottom">)&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">(2,165</td>
+<td nowrap="" valign="bottom">)&nbsp;</td></tr>
+<tr bgcolor="#cceeff" style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top" style="BORDER-BOTTOM:1px solid #000000"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:3.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Reclassification adjustment for realized (gain) loss on
+derivative&nbsp;financial instruments <i><sup style="font-size:85%; vertical-align:top">1</sup></i></p></td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">—&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(302</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(302</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td></tr>
+<tr style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top" style="BORDER-BOTTOM:1px solid #000000"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:5.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Other comprehensive income (loss)</p></td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">5,208</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(2,467</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">2,741</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td></tr>
+<tr bgcolor="#cceeff" style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top" style="BORDER-BOTTOM:1px solid #000000"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:1.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Balance at May&nbsp;1, 2016</p></td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(6,272</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(1,603</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(7,875</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td></tr>
+<tr style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:3.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Foreign currency translation adjustments</p></td>
+<td valign="bottom">&nbsp;&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">(3,005</td>
+<td nowrap="" valign="bottom">)&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td nowrap="" valign="bottom" align="right">—&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">(3,005</td>
+<td nowrap="" valign="bottom">)&nbsp;</td></tr>
+<tr bgcolor="#cceeff" style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:3.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Change in fair value of derivative financial instruments</p></td>
+<td valign="bottom">&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td nowrap="" valign="bottom" align="right">—&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">1,058</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">1,058</td>
+<td nowrap="" valign="bottom">&nbsp;</td></tr>
+<tr style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top" style="BORDER-BOTTOM:1px solid #000000"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:3.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Reclassification adjustment for realized (gain) loss on
+derivative&nbsp;financial instruments <i><sup style="font-size:85%; vertical-align:top">1</sup></i></p></td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">—&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(38</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(38</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td></tr>
+<tr bgcolor="#cceeff" style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top" style="BORDER-BOTTOM:1px solid #000000"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:5.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Other comprehensive income (loss)</p></td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(3,005</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">1,020</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(1,985</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td></tr>
+<tr style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top" style="BORDER-BOTTOM:1px solid #000000"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:1.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Balance at July&nbsp;31, 2016</p></td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(9,277</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(583</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(9,860</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td></tr>
+<tr bgcolor="#cceeff" style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:3.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Foreign currency translation adjustments</p></td>
+<td valign="bottom">&nbsp;&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">(1,731</td>
+<td nowrap="" valign="bottom">)&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td nowrap="" valign="bottom" align="right">—&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">(1,731</td>
+<td nowrap="" valign="bottom">)&nbsp;</td></tr>
+<tr style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:3.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Change in fair value of derivative financial instruments</p></td>
+<td valign="bottom">&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td nowrap="" valign="bottom" align="right">—&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">520</td>
+<td nowrap="" valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom">&nbsp;</td>
+<td valign="bottom" align="right">520</td>
+<td nowrap="" valign="bottom">&nbsp;</td></tr>
+<tr bgcolor="#cceeff" style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top" style="BORDER-BOTTOM:1px solid #000000"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:3.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Reclassification adjustment for realized (gain) loss on
+derivative financial instruments<i><sup style="font-size:85%; vertical-align:top"> 1</sup></i></p></td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">—&nbsp;&nbsp;</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">299</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">299</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td></tr>
+<tr style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top" style="BORDER-BOTTOM:1px solid #000000"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:5.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Other comprehensive income (loss)</p></td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(1,731</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">819</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:1px solid #000000" align="right">(912</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:1px solid #000000">)&nbsp;</td></tr>
+<tr bgcolor="#cceeff" style="page-break-inside:avoid ; font-family:Times New Roman; font-size:10pt">
+<td valign="top" style="BORDER-BOTTOM:2.00pt solid #000000"> <p style=" margin-top:0pt ; margin-bottom:0pt; margin-left:1.00em; text-indent:-1.00em; font-size:10pt; font-family:Times New Roman">Balance at October&nbsp;30, 2016</p></td>
+<td valign="bottom" style=" BORDER-BOTTOM:2.00pt solid #000000">&nbsp;&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000">$</td>
+<td valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000" align="right">(11,008</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000">)&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:2.00pt solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000">$</td>
+<td valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000" align="right">236</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000">&nbsp;</td>
+<td valign="bottom" style=" BORDER-BOTTOM:2.00pt solid #000000">&nbsp;</td>
+<td valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000">$</td>
+<td valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000" align="right">(10,772</td>
+<td nowrap="" valign="bottom" style="BORDER-BOTTOM:2.00pt solid #000000">)&nbsp;</td></tr>
+</tbody></table>
 `;
 
-var changes = {
-	"Calender Errors": [{
-			"ContextRef": "C_0000059255_20160401_20160630",
-			"Decimals": "-5",
-			"FactValue": "398600000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "DisclosureBusinessSegmentInformationSegmentOperatingPerformanceDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_SalesRevenueNet",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fcd6",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Net sales"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170401_20170630",
-			"Decimals": "-5",
-			"FactValue": "502200000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "DisclosureBusinessSegmentInformationSegmentOperatingPerformanceDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_SalesRevenueNet",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fcd7",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Net sales"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160401_20160630",
-			"Decimals": "-5",
-			"FactValue": "10700000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "DisclosureOtherIncomeNetScheduleOfComponentsOfOtherIncomeDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_OtherIncome",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fcda",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Other income, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170401_20170630",
-			"Decimals": "-5",
-			"FactValue": "7700000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "DisclosureOtherIncomeNetScheduleOfComponentsOfOtherIncomeDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_OtherIncome",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fcdb",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Other income, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": true,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160401_20160630",
-			"Decimals": "-5",
-			"FactValue": "409300000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "vhi_RevenuesAndOtherIncomeNet",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fcde",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Total revenues and other income"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170401_20170630",
-			"Decimals": "-5",
-			"FactValue": "509900000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "vhi_RevenuesAndOtherIncomeNet",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fcdf",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Total revenues and other income"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160401_20160630",
-			"Decimals": "-5",
-			"FactValue": "336400000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "DisclosureBusinessSegmentInformationSegmentOperatingPerformanceDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_CostOfGoodsSold",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fce2",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Cost of sales"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170401_20170630",
-			"Decimals": "-5",
-			"FactValue": "358400000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "DisclosureBusinessSegmentInformationSegmentOperatingPerformanceDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_CostOfGoodsSold",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fce3",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Cost of sales"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160401_20160630",
-			"Decimals": "-5",
-			"FactValue": "64600000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_SellingGeneralAndAdministrativeExpense",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fce6",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Selling, general and administrative"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170401_20170630",
-			"Decimals": "-5",
-			"FactValue": "77200000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_SellingGeneralAndAdministrativeExpense",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fce7",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Selling, general and administrative"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160401_20160630",
-			"Decimals": "-5",
-			"FactValue": "15800000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "DisclosureBusinessSegmentInformationSegmentOperatingPerformanceDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_InterestExpense",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fced",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Interest"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170401_20170630",
-			"Decimals": "-5",
-			"FactValue": "16000000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "DisclosureBusinessSegmentInformationSegmentOperatingPerformanceDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_InterestExpense",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fcee",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Interest"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160401_20160630",
-			"Decimals": "-5",
-			"FactValue": "416800000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_CostsAndExpenses",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fcf1",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Total costs and expenses"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170401_20170630",
-			"Decimals": "-5",
-			"FactValue": "622200000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_CostsAndExpenses",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fcf2",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Total costs and expenses"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160401_20160630",
-			"Decimals": "-5",
-			"FactValue": "-7500000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "DisclosureBusinessSegmentInformationSegmentOperatingPerformanceDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fcf5",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Loss before income taxes"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170401_20170630",
-			"Decimals": "-5",
-			"FactValue": "-112300000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "DisclosureBusinessSegmentInformationSegmentOperatingPerformanceDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_IncomeLossFromContinuingOperationsBeforeIncomeTaxesExtraordinaryItemsNoncontrollingInterest",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fcf6",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Loss before income taxes"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160401_20160630",
-			"Decimals": "-5",
-			"FactValue": "200000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "DisclosureIncomeTaxesComponentsOfComprehensiveProvisionForIncomeTaxesAllocationDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_IncomeTaxExpenseBenefit",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fcf9",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Income tax expense (benefit)"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170401_20170630",
-			"Decimals": "-5",
-			"FactValue": "-167400000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "DisclosureIncomeTaxesComponentsOfComprehensiveProvisionForIncomeTaxesAllocationDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_IncomeTaxExpenseBenefit",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fcfa",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Income tax expense (benefit)"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160401_20160630",
-			"Decimals": "-5",
-			"FactValue": "-7700000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ProfitLoss",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fcfd",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Net income (loss)",
-				"terseLabel": "Net income (loss)"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170401_20170630",
-			"Decimals": "-5",
-			"FactValue": "55100000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ProfitLoss",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fcfe",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Net income (loss)",
-				"terseLabel": "Net income (loss)"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160401_20160630",
-			"Decimals": "-5",
-			"FactValue": "800000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "DisclosureNoncontrollingInterestInSubsidiariesScheduleOfNoncontrollingInterestInNetIncomeLossOfSubsidiariesDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_NetIncomeLossAttributableToNoncontrollingInterest",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd01",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Noncontrolling interest in net income (loss) of subsidiaries"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170401_20170630",
-			"Decimals": "-5",
-			"FactValue": "46300000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "DisclosureNoncontrollingInterestInSubsidiariesScheduleOfNoncontrollingInterestInNetIncomeLossOfSubsidiariesDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_NetIncomeLossAttributableToNoncontrollingInterest",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd02",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Noncontrolling interest in net income (loss) of subsidiaries"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160401_20160630",
-			"Decimals": "-5",
-			"FactValue": "-8500000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_NetIncomeLoss",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd06",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Net income (loss) attributable to Valhi stockholders"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170401_20170630",
-			"Decimals": "-5",
-			"FactValue": "8800000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_NetIncomeLoss",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd07",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Net income (loss) attributable to Valhi stockholders"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170401_20170630",
-			"Decimals": "2",
-			"FactValue": "0.03",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD / shares",
-			"UnitRef": "U_iso4217USD_shares",
-			"XBRLID": "us-gaap_EarningsPerShareBasicAndDiluted",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd0b",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Basic and diluted net loss per share"
-			},
-			"dataType": "num:perShareItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160401_20160630",
-			"Decimals": "INF",
-			"FactValue": "0.02",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD / shares",
-			"UnitRef": "U_iso4217USD_shares",
-			"XBRLID": "us-gaap_CommonStockDividendsPerShareCashPaid",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd0e",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Cash dividends per share"
-			},
-			"dataType": "num:perShareItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": true,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170401_20170630",
-			"Decimals": "INF",
-			"FactValue": "0.02",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD / shares",
-			"UnitRef": "U_iso4217USD_shares",
-			"XBRLID": "us-gaap_CommonStockDividendsPerShareCashPaid",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd0f",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Cash dividends per share"
-			},
-			"dataType": "num:perShareItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": true,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "-29700000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ProfitLoss",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fcff",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Net income (loss)",
-				"terseLabel": "Net income (loss)"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "76900000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTOFEQUITY"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ProfitLoss",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd00",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Net income (loss)",
-				"terseLabel": "Net income (loss)",
-				"verboseLabel": "Net income"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "7800000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_OtherComprehensiveIncomeLossForeignCurrencyTransactionAndTranslationAdjustmentNetOfTax",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd18",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Currency translation"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "20100000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_OtherComprehensiveIncomeLossForeignCurrencyTransactionAndTranslationAdjustmentNetOfTax",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd19",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Currency translation"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "500000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_OtherComprehensiveIncomeLossAvailableForSaleSecuritiesAdjustmentNetOfTax",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd1c",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Marketable securities"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": true,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "-3000000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_OtherComprehensiveIncomeLossDerivativesQualifyingAsHedgesNetOfTax",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd20",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Interest rate swap"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "100000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_OtherComprehensiveIncomeLossDerivativesQualifyingAsHedgesNetOfTax",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd21",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Interest rate swap"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_us-gaapRetirementPlanTypeAxis_us-gaapOtherPostretirementBenefitPlansDefinedBenefitMember_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "600000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_OtherComprehensiveIncomeLossPensionAndOtherPostretirementBenefitPlansAdjustmentNetOfTax",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd28",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Pension and other postretirement benefit plan"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "9900000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_OtherComprehensiveIncomeLossNetOfTax",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd2c",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Total other comprehensive income (loss), net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "22600000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTOFEQUITY"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_OtherComprehensiveIncomeLossNetOfTax",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd2d",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Total other comprehensive income (loss), net",
-				"terseLabel": "Other comprehensive income, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "-19800000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ComprehensiveIncomeNetOfTaxIncludingPortionAttributableToNoncontrollingInterest",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd30",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Comprehensive income (loss)"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "99500000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ComprehensiveIncomeNetOfTaxIncludingPortionAttributableToNoncontrollingInterest",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd31",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Comprehensive income (loss)"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "1400000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ComprehensiveIncomeNetOfTaxAttributableToNoncontrollingInterest",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd34",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Comprehensive income (loss) attributable to noncontrolling interest"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "61000000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ComprehensiveIncomeNetOfTaxAttributableToNoncontrollingInterest",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd35",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Comprehensive income (loss) attributable to noncontrolling interest"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "-21200000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ComprehensiveIncomeNetOfTax",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd38",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Comprehensive income (loss) attributable to Valhi stockholders"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "38500000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ComprehensiveIncomeNetOfTax",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd39",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Comprehensive income (loss) attributable to Valhi stockholders"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "5100000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS", "DisclosureBusinessSegmentInformationAdditionalInformationDetail", "DisclosureOtherNoncurrentAssetsAdditionalInformationDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ImpairmentOfIntangibleAssetsIndefinitelivedExcludingGoodwill",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fcea",
-			"isMapped": false,
-			"labels": {
-				"verboseLabel": "Contract related intangible asset impairment",
-				"terseLabel": "Contract related intangible asset impairment"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170401_20170630",
-			"Decimals": "-5",
-			"FactValue": "170600000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS", "DisclosureBusinessSegmentInformationAdditionalInformationDetail", "DisclosureLongLivedAssetImpairmentAdditionalInformationDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ImpairmentOfLongLivedAssetsHeldForUse",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fceb",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Long-lived asset impairment"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "170600000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS", "DisclosureBusinessSegmentInformationAdditionalInformationDetail", "DisclosureLongLivedAssetImpairmentAdditionalInformationDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ImpairmentOfLongLivedAssetsHeldForUse",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fcec",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Long-lived asset impairment"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160401_20160630",
-			"Decimals": "-5",
-			"FactValue": "-7700000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ProfitLoss",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fcfd",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Net income (loss)",
-				"terseLabel": "Net income (loss)"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170401_20170630",
-			"Decimals": "-5",
-			"FactValue": "55100000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ProfitLoss",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fcfe",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Net income (loss)",
-				"terseLabel": "Net income (loss)"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "-29700000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ProfitLoss",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fcff",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Net income (loss)",
-				"terseLabel": "Net income (loss)"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "76900000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTOFEQUITY"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ProfitLoss",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd00",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Net income (loss)",
-				"terseLabel": "Net income (loss)",
-				"verboseLabel": "Net income"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "34500000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS", "DisclosureLongLivedAssetImpairmentScheduleOfCertainHistoricalFinancialInformationDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_DepreciationAndAmortization",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd3a",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Depreciation and amortization"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "33200000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS", "DisclosureLongLivedAssetImpairmentScheduleOfCertainHistoricalFinancialInformationDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_DepreciationAndAmortization",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd3b",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Depreciation and amortization"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "1200000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "vhi_DefinedBenefitPlanNetPeriodicBenefitCostGreaterLessThanFunding",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd3c",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Benefit plan expense greater than cash funding"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "4600000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "vhi_DefinedBenefitPlanNetPeriodicBenefitCostGreaterLessThanFunding",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd3d",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Benefit plan expense greater than cash funding"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "-17000000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "vhi_DeferredIncomeTaxExpenseBenefitExcludingTaxContingencies",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd3e",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Deferred income taxes"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "-183900000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "vhi_DeferredIncomeTaxExpenseBenefitExcludingTaxContingencies",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd3f",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Deferred income taxes"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "6600000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "vhi_EquityMethodInvestmentDistributionsFromContributionsToNet",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd40",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Distributions from Ti02 manufacturing joint venture, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "400000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_OtherNoncashIncomeExpense",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd42",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Other, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "-1500000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_OtherNoncashIncomeExpense",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd43",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Other, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "53000000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_IncreaseDecreaseInAccountsAndOtherReceivables",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd44",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Accounts and other receivables, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "77800000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_IncreaseDecreaseInAccountsAndOtherReceivables",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd45",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Accounts and other receivables, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "-58800000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_IncreaseDecreaseInInventories",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd46",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Inventories, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "-22600000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_IncreaseDecreaseInInventories",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd47",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Inventories, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "-600000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "vhi_IncreaseDecreaseInRealEstateDevelopmentProperty",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd48",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Land held for development, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "3100000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "vhi_IncreaseDecreaseInRealEstateDevelopmentProperty",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd49",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Land held for development, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "-11900000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_IncreaseDecreaseInAccountsPayableAndAccruedLiabilities",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd4a",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Accounts payable and accrued liabilities"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "8800000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_IncreaseDecreaseInAccountsPayableAndAccruedLiabilities",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd4b",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Accounts payable and accrued liabilities"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "-300000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_IncreaseDecreaseDueFromAffiliates",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd4d",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Accounts with affiliates"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "-5400000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_IncreaseDecreaseInAccruedIncomeTaxesPayable",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd4e",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Income taxes"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "5800000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_IncreaseDecreaseInAccruedIncomeTaxesPayable",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd4f",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Income taxes"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "-3600000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_IncreaseDecreaseInOtherOperatingCapitalNet",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd50",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Other, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "-14600000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_IncreaseDecreaseInOtherOperatingCapitalNet",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd51",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Other, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "-8700000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd52",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Net cash provided by (used in) operating activities"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "88700000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd53",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Net cash provided by (used in) operating activities"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "26600000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS", "DisclosureLongLivedAssetImpairmentScheduleOfCertainHistoricalFinancialInformationDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_PaymentsToAcquirePropertyPlantAndEquipment",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd54",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Capital expenditures"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "30500000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS", "DisclosureLongLivedAssetImpairmentScheduleOfCertainHistoricalFinancialInformationDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_PaymentsToAcquirePropertyPlantAndEquipment",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd55",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Capital expenditures"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "1100000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "vhi_PaymentsToAcquireCapitalizedPermit",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd56",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Capitalized permit costs"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "2200000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "vhi_PaymentsToAcquireCapitalizedPermit",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd57",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Capitalized permit costs"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "4400000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_PaymentsToAcquireMarketableSecurities",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd58",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Purchases of marketable securities"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "5600000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_PaymentsToAcquireMarketableSecurities",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd59",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Purchases of marketable securities"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "3300000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ProceedsFromSaleOfAvailableForSaleSecurities",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd5a",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Disposals of marketable securities"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "5500000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ProceedsFromSaleOfAvailableForSaleSecurities",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd5b",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Disposals of marketable securities"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "100000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_PaymentsForProceedsFromOtherInvestingActivities",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd5c",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Other, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "-28900000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_NetCashProvidedByUsedInInvestingActivitiesContinuingOperations",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd5d",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Net cash used in investing activities"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "-32800000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_NetCashProvidedByUsedInInvestingActivitiesContinuingOperations",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd5e",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Net cash used in investing activities"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "149200000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ProceedsFromIssuanceOfLongTermDebt",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd5f",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Borrowings"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "175700000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ProceedsFromIssuanceOfLongTermDebt",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd60",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Borrowings"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "101500000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS", "DisclosureLongTermDebtOtherAdditionalInformationDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_RepaymentsOfLongTermDebt",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd61",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Principal payments"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "148900000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS", "DisclosureLongTermDebtOtherAdditionalInformationDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_RepaymentsOfLongTermDebt",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd62",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Principal payments"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "200000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_PaymentsOfFinancingCosts",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd63",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Deferred financing costs paid"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "13600000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_PaymentsOfDividendsCommonStock",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd64",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Valhi cash dividends paid"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": true,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "13600000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_PaymentsOfDividendsCommonStock",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd65",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Valhi cash dividends paid"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": true,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "7000000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_PaymentsOfDividendsMinorityInterest",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd66",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Distributions to noncontrolling interest in subsidiaries"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": true,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "7000000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_PaymentsOfDividendsMinorityInterest",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd67",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Distributions to noncontrolling interest in subsidiaries"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": true,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "27100000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_NetCashProvidedByUsedInFinancingActivitiesContinuingOperations",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd68",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Net cash provided by financing activities"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "6000000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_NetCashProvidedByUsedInFinancingActivitiesContinuingOperations",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd69",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Net cash provided by financing activities"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "-10500000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_CashAndCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd6a",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Operating, investing and financing activities"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "61900000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_CashAndCashEquivalentsPeriodIncreaseDecreaseExcludingExchangeRateEffect",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd6b",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Operating, investing and financing activities"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "500000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_EffectOfExchangeRateOnCashAndCashEquivalents",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd6c",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Effect of exchange rate on cash"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": true,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "8600000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_EffectOfExchangeRateOnCashAndCashEquivalents",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd6d",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Effect of exchange rate on cash"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20151231",
-			"Decimals": "-5",
-			"FactValue": "229100000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "vhi_CashAndCashEquivalentsAndRestrictedCashAndCashEquivalentsAtCarryingValue",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd6e",
-			"isMapped": false,
-			"labels": {
-				"periodStartLabel": "Balance at beginning of period"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20161231",
-			"Decimals": "-5",
-			"FactValue": "196500000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "vhi_CashAndCashEquivalentsAndRestrictedCashAndCashEquivalentsAtCarryingValue",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd6f",
-			"isMapped": false,
-			"labels": {
-				"periodStartLabel": "Balance at beginning of period"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "29900000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_InterestPaidNet",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd72",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Interest, net of capitalized interest"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "30000000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_InterestPaidNet",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd73",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Interest, net of capitalized interest"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "8500000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_IncomeTaxesPaidNet",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd74",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Income taxes, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "26300000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_IncomeTaxesPaidNet",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd75",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Income taxes, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "4500000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "vhi_IncreaseDecreaseInAccruedCapitalExpenditure",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd76",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Change in accruals for capital expenditures"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "4000000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "vhi_IncreaseDecreaseInAccruedCapitalExpenditure",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd77",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Change in accruals for capital expenditures"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "9300000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "vhi_IndebtednessBorrowingsPaidDirectlyToLenderToSettleRefinancedIndebtedness",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd78",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Indebtedness borrowings paid directly to lender to settle refinanced indebtedness"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "8400000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "vhi_IndebtednessPrincipalPaymentsPaidDirectlyByLender",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd79",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Indebtedness principal payments paid directly by lender"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": true,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "900000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_DebtIssuanceCostsIncurredDuringNoncashOrPartialNoncashTransaction",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd7a",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Indebtedness borrowings paid directly to lender for debt issuance costs"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "76900000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTOFEQUITY"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ProfitLoss",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd00",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Net income (loss)",
-				"terseLabel": "Net income (loss)",
-				"verboseLabel": "Net income"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "22600000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS", "StatementCONDENSEDCONSOLIDATEDSTATEMENTOFEQUITY"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_OtherComprehensiveIncomeLossNetOfTax",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd2d",
-			"isMapped": false,
-			"labels": {
-				"totalLabel": "Total other comprehensive income (loss), net",
-				"terseLabel": "Other comprehensive income, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_us-gaapStatementEquityComponentsAxis_us-gaapRetainedEarningsMember_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "21500000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTOFEQUITY"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ProfitLoss",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd81",
-			"isMapped": false,
-			"labels": {
-				"verboseLabel": "Net income"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_us-gaapStatementEquityComponentsAxis_us-gaapNoncontrollingInterestMember_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "55400000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTOFEQUITY"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_ProfitLoss",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd82",
-			"isMapped": false,
-			"labels": {
-				"verboseLabel": "Net income"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_us-gaapStatementEquityComponentsAxis_us-gaapAccumulatedOtherComprehensiveIncomeMember_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "17000000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTOFEQUITY"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_OtherComprehensiveIncomeLossNetOfTax",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd83",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Other comprehensive income, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_us-gaapStatementEquityComponentsAxis_us-gaapNoncontrollingInterestMember_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "5600000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTOFEQUITY"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_OtherComprehensiveIncomeLossNetOfTax",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd84",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Other comprehensive income, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_us-gaapStatementEquityComponentsAxis_us-gaapRetainedEarningsMember_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "13300000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTOFEQUITY"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_DividendsCommonStockCash",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd86",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Cash dividends"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_us-gaapStatementEquityComponentsAxis_us-gaapNoncontrollingInterestMember_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "7000000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTOFEQUITY"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_DividendsCommonStockCash",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd87",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Cash dividends"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "20500000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTOFEQUITY"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_DividendsCommonStockCash",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd88",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Cash dividends"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_us-gaapStatementEquityComponentsAxis_us-gaapAdditionalPaidInCapitalMember_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "-200000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTOFEQUITY"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_StockholdersEquityOther",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd89",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Other, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": true,
-			"singleLabelRole": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_us-gaapStatementEquityComponentsAxis_us-gaapNoncontrollingInterestMember_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "-200000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTOFEQUITY"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_StockholdersEquityOther",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd8a",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Other, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": true,
-			"singleLabelRole": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "-400000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTOFEQUITY"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_StockholdersEquityOther",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd8b",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Other, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": false
-		}
-	],
-	"Not Found": [{
-			"ContextRef": "C_0000059255_20161231",
-			"Decimals": null,
-			"FactValue": "",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": true,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDBALANCESHEETS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_CommitmentsAndContingencies",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fcd4",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Commitments and contingencies (Notes 13 and 16)"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": false,
-			"factType": "numeric",
-			"ambiguous": true,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": false,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160401_20160630",
-			"Decimals": "2",
-			"FactValue": "-0.02",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD / shares",
-			"UnitRef": "U_iso4217USD_shares",
-			"XBRLID": "us-gaap_EarningsPerShareBasicAndDiluted",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd0a",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Basic and diluted net loss per share"
-			},
-			"dataType": "num:perShareItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": true,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": false,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_us-gaapRetirementPlanTypeAxis_us-gaapPensionPlansDefinedBenefitMember_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "-5200000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_OtherComprehensiveIncomeLossPensionAndOtherPostretirementBenefitPlansAdjustmentNetOfTax",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd24",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Pension and other postretirement benefit plan"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isLabelMatch": false,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_us-gaapRetirementPlanTypeAxis_us-gaapPensionPlansDefinedBenefitMember_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "-3600000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_OtherComprehensiveIncomeLossPensionAndOtherPostretirementBenefitPlansAdjustmentNetOfTax",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd25",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Pension and other postretirement benefit plan"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isLabelMatch": false,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "8400000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "vhi_EquityMethodInvestmentDistributionsFromContributionsToNet",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd41",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Distributions from Ti02 manufacturing joint venture, net"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": true,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": false,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "500000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_IncreaseDecreaseDueFromAffiliates",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd4c",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Accounts with affiliates"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": true,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": false,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20160630",
-			"Decimals": "-5",
-			"FactValue": "219100000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "vhi_CashAndCashEquivalentsAndRestrictedCashAndCashEquivalentsAtCarryingValue",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd70",
-			"isMapped": false,
-			"labels": {
-				"periodStartLabel": "Balance at beginning of period"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": false,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_20170630",
-			"Decimals": "-5",
-			"FactValue": "267000000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCASHFLOWS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "vhi_CashAndCashEquivalentsAndRestrictedCashAndCashEquivalentsAtCarryingValue",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd71",
-			"isMapped": false,
-			"labels": {
-				"periodStartLabel": "Balance at beginning of period"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": false,
-			"isContextMatch": false
-		}, {
-			"ContextRef": "C_0000059255_us-gaapStatementEquityComponentsAxis_us-gaapAdditionalPaidInCapitalMember_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "200000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTOFEQUITY"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_DividendsCommonStockCash",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd85",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Cash dividends"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": true,
-			"singleLabelRole": true,
-			"isLabelMatch": false,
-			"isContextMatch": false
-		}
-	],
-	"Tag Mismatch": [{
-			"ContextRef": "C_0000059255_20160101_20160630",
-			"Decimals": "-5",
-			"FactValue": "-2500000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFOPERATIONS", "DisclosureNoncontrollingInterestInSubsidiariesScheduleOfNoncontrollingInterestInNetIncomeLossOfSubsidiariesDetail"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_NetIncomeLossAttributableToNoncontrollingInterest",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd04",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Noncontrolling interest in net income (loss) of subsidiaries"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": false,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": true,
-			"isContextMatch": true
-		}, {
-			"ContextRef": "C_0000059255_20170101_20170630",
-			"Decimals": "-5",
-			"FactValue": "-800000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_OtherComprehensiveIncomeLossAvailableForSaleSecuritiesAdjustmentNetOfTax",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd1d",
-			"isMapped": false,
-			"labels": {
-				"terseLabel": "Marketable securities"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": true,
-			"singleLabelRole": true,
-			"isDimensional": true,
-			"isLabelMatch": false,
-			"isContextMatch": true
-		}, {
-			"ContextRef": "C_0000059255_us-gaapRetirementPlanTypeAxis_us-gaapPensionPlansDefinedBenefitMember_20170401_20170630",
-			"Decimals": "-5",
-			"FactValue": "-800000",
-			"Format": null,
-			"IsFraction": false,
-			"IsItem": true,
-			"IsNil": false,
-			"IsNumeric": true,
-			"IsTuple": false,
-			"Roles": ["StatementCONDENSEDCONSOLIDATEDSTATEMENTSOFCOMPREHENSIVEINCOMELOSS"],
-			"Scale": null,
-			"Sign": null,
-			"Unit": "USD",
-			"UnitRef": "U_iso4217USD",
-			"XBRLID": "us-gaap_OtherComprehensiveIncomeLossPensionAndOtherPostretirementBenefitPlansAdjustmentNetOfTax",
-			"footnotes": [],
-			"_id": "59f30488633f902580a8fd23",
-			"isMapped": false,
-			"labels": {
-				"negatedLabel": "Pension and other postretirement benefit plan"
-			},
-			"dataType": "xbrli:monetaryItemType",
-			"canDirectMap": true,
-			"factType": "numeric",
-			"ambiguous": true,
-			"singleLabelRole": true,
-			"isLabelMatch": false,
-			"isContextMatch": true
-		}
-	]
-};
 
 
 exports.getHTML = function () {
     return htmlData.toString();
 }
-exports.changes = changes;

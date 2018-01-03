@@ -36,54 +36,63 @@ $.fn.getColumnCells = function(index,factCellStarted) {
     });
     return cells;
 }
+function isEmptyOrScalingText(text){
+    if(text){
+        return text.startsWith('(') && text.match(/in\s+(thousands|millions)/i) && text.endsWith(')')
+    }else{
+        return true;
+    }
+    
+}
 
-$.fn.getContextTexts = function(){
+
+$.fn.getContextTextObj = function(){
     var cellIndex = -1, thisRow = this.closest('tr');
     var siblingCells = thisRow.find('td');
-    if ($(siblingCells[0]).text().trim()) return false;
+    if (!isEmptyOrScalingText($(siblingCells[0]).text().trim())) return false;
     for (var i = 0; i < siblingCells.length; i++) {
-        var $cell = $(siblingCells[i]);       
-        var tarColspan = $cell.attr('colspan')? parseInt($cell.attr('colspan')):1;       
+        var $cell = $(siblingCells[i]);
+        var tarColspan = $cell.attr('colspan')? parseInt($cell.attr('colspan')):1;
         cellIndex = cellIndex + tarColspan;
-        if ($cell.is(this)) break;        
+        if ($cell.is(this)) break;
     }
     if (cellIndex < 3) return false;
     var tableRows = this.closest('table').find('tr');
 
     var tableHeaderArray = [];
-    
-    for (var i = 0; i < tableRows.length; i++) {  
-        var $row = $(tableRows[i]);            
-        if($('td',$row).first().text().trim()) break;           
+
+    for (var i = 0; i < tableRows.length; i++) {
+        var $row = $(tableRows[i]);
+        if(!isEmptyOrScalingText($('td',$row).first().text().trim())) break;
         if($row.text().trim()=="") continue;
         var cells = $row.find('td');
-        var hCellIndex = -1, hCellPrevIndex=-1, tableHeader = [];  
+        var hCellIndex = -1, hCellPrevIndex=-1, tableHeader = [];
         for (var j = 0; j < cells.length; j++) {
             var $cell = $(cells[j]);
             var colspan = $cell.attr('colspan')? parseInt($cell.attr('colspan')):1;
             hCellPrevIndex = hCellIndex;
             hCellIndex = hCellIndex + colspan;
-            if ($cell.text().trim() && hCellPrevIndex < cellIndex && cellIndex <= hCellIndex + tarColspan - 1){                
+            if ($cell.text().trim() && hCellPrevIndex < cellIndex && cellIndex <= hCellIndex + tarColspan - 1){
                 tableHeader.push({cellText:$cell.text().trim(),pi:hCellPrevIndex,ci:hCellIndex});
                 tableHeaderArray.push({cellText:$cell.text().trim(),pi:hCellPrevIndex,ci:hCellIndex});
-            }          
+            }
         }
-        
+
     }
     var finalObj = {};
-    for (let l = 0; l < tableHeaderArray.length; l++) {                
+    for (let l = 0; l < tableHeaderArray.length; l++) {
         const cell = tableHeaderArray[l];
         tableHeader.forEach(el => {
             if((cell.pi < el.pi && cell.ci >= el.ci) ||(cell.pi == el.pi && cell.ci == el.ci)){
-                if(finalObj[el.ci]){                    
+                if(finalObj[el.ci]){
                     finalObj[el.ci]= finalObj[el.ci] +" "+ cell.cellText;
                 }else{
                     finalObj[el.ci] = cell.cellText;
                 }
             }
         });
-        
-    } 
+
+    }
     return finalObj;
 }
 
@@ -219,7 +228,7 @@ var text2num = function (s) {
 
 
 //console.log($('td#6-7').getHeaderArr());
-console.log($('table').getColumnCells("3",true));
+console.log($('td#chh1').closest('td').text());
 
 // var str  = " June 30, 2017";
 // var secDateRegx = /((One|Three|Six|Nine|twelve|1|3|6|9|12)\sMonths\sended\s?)?(january|february|march|april|may|june|july|august|september|october|november|december|jan|feb|mar|apr|may|jun|jul|aug|sep|oct|nov|dec)\.?\s?(3[01]|[12]\d|[1-9])\,?\s?(20[1-9][1-9])?/gi;
@@ -227,7 +236,3 @@ console.log($('table').getColumnCells("3",true));
 // var match = secDateRegx.exec(str);
 // console.log(match);
 
-
-array.forEach(element => {
-    
-});
